@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxpayer Registration Certificate - FBR</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .certificate-container {
+            width: 800px;
+            background-color: #ffffff;
+            border: 3px solid #005691;
+            padding: 30px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            box-sizing: border-box;
+            background-image: radial-gradient(rgba(0, 86, 145, 0.03) 2px, transparent 2px);
+            background-size: 20px 20px;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #005691;
+            padding-bottom: 15px;
+        }
+        .logo-section h1 {
+            color: #005691;
+            margin: 0;
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        .logo-section p {
+            margin: 0;
+            font-size: 12px;
+            color: #555;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .fbr-title {
+            text-align: right;
+        }
+        .fbr-title .gov {
+            font-size: 12px;
+            margin: 0;
+            color: #333;
+        }
+        .fbr-title .main-head {
+            font-size: 20px;
+            font-weight: bold;
+            color: #005691;
+            margin: 2px 0;
+        }
+        .fbr-title .sub-head {
+            font-size: 13px;
+            color: #666;
+            margin: 0;
+        }
+        .certificate-title-box {
+            text-align: center;
+            margin: 25px 0;
+            background-color: #005691;
+            color: white;
+            padding: 12px;
+            border-radius: 4px;
+        }
+        .certificate-title-box h2 {
+            margin: 0;
+            font-size: 22px;
+            letter-spacing: 1px;
+        }
+        .certificate-title-box p {
+            margin: 5px 0 0 0;
+            font-size: 12px;
+            font-style: italic;
+            opacity: 0.9;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 2;
+        }
+        .info-table td {
+            padding: 12px 10px;
+            border-bottom: 1px solid #eef2f5;
+            font-size: 14px;
+        }
+        .info-table td.label {
+            font-weight: bold;
+            color: #333;
+            width: 25%;
+        }
+        .info-table td.value {
+            color: #000;
+            font-weight: 600;
+        }
+        .watermark-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            font-weight: 900;
+            color: rgba(0, 86, 145, 0.04);
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+            pointer-events: none;
+            letter-spacing: 2px;
+        }
+        .instruction-box {
+            background-color: #e6f0fa;
+            border-left: 5px solid #005691;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .instruction-box p {
+            margin: 5px 0;
+            font-size: 13px;
+            color: #003366;
+            font-weight: 500;
+        }
+        .legal-notice {
+            font-size: 11px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 25px;
+            line-height: 1.5;
+            border-top: 1px dashed #ccc;
+            padding-top: 15px;
+        }
+        .footer-details {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 12px;
+            color: #444;
+            border-top: 2px solid #005691;
+            padding-top: 12px;
+        }
+        .iris-brand {
+            font-weight: bold;
+            color: #7b1fa2;
+            font-style: italic;
+            font-size: 16px;
+        }
+        .footer-bar {
+            margin-top: 15px;
+            background-color: #005691;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            border-radius: 4px;
+        }
+        .footer-bar a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="certificate-container">
+        <div class="watermark-bg">INLAND REVENUE SERVICE</div>
+
+        <div class="header">
+            <div class="logo-section">
+                <h1>FBR</h1>
+                <p>PAKISTAN</p>
+            </div>
+            <div class="fbr-title">
+                <p class="gov">Government of Pakistan</p>
+                <p class="main-head">Federal Board of Revenue</p>
+                <p class="sub-head">Inland Revenue Services</p>
+            </div>
+        </div>
+
+        <div class="certificate-title-box">
+            <h2>TAXPAYER REGISTRATION CERTIFICATE</h2>
+            <p>(Under Section 181C of the Income Tax Ordinance 2001)</p>
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <td class="label">Registration No.</td>
+                <td class="value" style="color: #d32f2f; font-size: 16px;">0186194</td>
+            </tr>
+            <tr>
+                <td class="label">Date of Registration</td>
+                <td class="value">15-October-2021</td>
+            </tr>
+            <tr>
+                <td class="label">Type of Person</td>
+                <td class="value">Company</td>
+            </tr>
+            <tr>
+                <td class="label">Inc. No.</td>
+                <td class="value">850406465</td>
+            </tr>
+            <tr>
+                <td class="label">Inc. Date</td>
+                <td class="value">15-October-2021</td>
+            </tr>
+            <tr>
+                <td class="label">Name</td>
+                <td class="value" style="color: #005691;">PUNJAB RURAL MUNICIPAL</td>
+            </tr>
+            <tr>
+                <td class="label">Address</td>
+                <td class="value">SERVICES COMPANY O/O As Admin Lg&Cd Department Lahore, 54000 Pakistan</td>
+            </tr>
+            <tr>
+                <td class="label">Tax Office</td>
+                <td class="value">CRO Lahore</td>
+            </tr>
+            <tr>
+                <td class="label">Activity Type</td>
+                <td class="value">Business</td>
+            </tr>
+        </table>
+
+        <div class="instruction-box">
+            <p><strong>This is a computer generated certificate and, hence, no signatures are required.</strong></p>
+            <p>Displaying of Taxpayer Registration Certificate is mandatory as provided under section 181C of Income Tax Ordinance 2001.</p>
+        </div>
+
+        <div class="legal-notice">
+            This is not a valid evidence of being a "filer" for the purposes of clauses (23A) and (35C) of sections 2 and 181A of the Income Tax Ordinance 2001.
+        </div>
+
+        <div class="footer-details">
+            <span class="iris-brand">Iris</span>
+            <span><strong>Date of Print:</strong> 01-March-2026</span>
+        </div>
+
+        <div class="footer-bar">
+            <span>PARTNER IN PROGRESS</span>
+            <span>Helpline: 051 111 772 772</span>
+            <span>Email: <a href="mailto:helpline@fbr.gov.pk">helpline@fbr.gov.pk</a></span>
+            <span>Web: <a href="https://www.fbr.gov.pk" target="_blank">www.fbr.gov.pk</a></span>
+        </div>
+    </div>
+
+</body>
+</html>
